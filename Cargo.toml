@@ -1,0 +1,22 @@
+[package]
+name = "catdex-api"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+actix-files = "0.6.5"
+actix-web = { version = "4.5.1", features = ["openssl"] }
+awmp = "0.8.1"
+serde = { version = "1.0.159", features = ["derive"] }
+diesel = { version = "2.0.2", features = ["postgres", "r2d2"] }
+handlebars = { version = "4.3.5", features = ["dir_source"] }
+r2d2 = "0.8.10"
+serde_json = "1.0.89"
+actix-rt = "2.9.0"
+validator = { version = "0.17.0", features = ["derive"] }
+derive_more = "0.99.17"
+env_logger = "0.10.0"
+log = "0.4.21"
+openssl = "0.10.49"
